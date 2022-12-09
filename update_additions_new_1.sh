@@ -101,7 +101,7 @@ fi
 # para acceder a carpetas compartidas, el usuario tiene que pertenecer al grupo vboxsf, comprobamos ese hecho
 if ! procesar "id -nGz $USER | grep -qzxF '$vboxsf'" "Comprobando la pertenencia al grupo $vboxsf"; then
     # usuario actual no pertenece al grupo vboxsf, añadiendo.
-    procesar "sudo usermod -aG vboxsf $USER" "Añadiendo usuario al grupo $vboxsf"
+    procesar "sudo usermod -aG vboxsf $USER" "Añadiendo usuario $USER al grupo $vboxsf"
 fi
 
 # El instalador de Guest Additions recomienda reiniciar. Solicitamos acción al usuario.
