@@ -1,5 +1,5 @@
 #!/bin/bash
-# Autor: Dima
+# Autor: jefepedro
 
 debug=0 # 0 para modo de operación, 1 para modo debug
 
